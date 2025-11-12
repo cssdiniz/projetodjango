@@ -1,0 +1,21 @@
+<div class="container">
+    <table>
+        <tr>
+            <th>Nome</th>
+            <th>Sobrenome</th>
+            <th>CPF</th>
+            <th>Remuneração</th>
+        </tr>
+
+        {% for usuario in usuarios %}
+        <tr>
+            <td>{{ funcionario.nome}}</td>
+            <td>{{ funcionario.sobrenome}}</td>
+            <td>{{ funcionario.cpf}}</td>
+            <td>{{ funcionario.remuneracao}}</td>
+        </tr>
+
+        {% endfor %}
+
+    </table>
+</div>

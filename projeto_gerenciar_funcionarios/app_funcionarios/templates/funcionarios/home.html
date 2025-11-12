@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciasr Funcionários</title>
+</head>
+<body>
+
+    <h1>Gerenciar Funcionários</h1>
+
+    <form action="{% url 'listagem_funcionarios' %}" method="post">
+        {% csrf_token %}
+        <div class="container">
+        <h1>Cadastro de Funcionários</h1>
+        Nome <input name="nome" type="text">
+        Sobrenome <input name="sobrenome" type="text">
+        CPF <input name="cpf" type="number">
+        Remuneração <input name="remuneracao" type="number">
+        <button>Cadastrar</button>
+        </div>
+    </form>
+    
+</body>
+</html>
